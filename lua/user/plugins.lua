@@ -59,6 +59,10 @@ return packer.startup(function(use)
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
+  use { "windwp/nvim-spectre", commit = "c553eb47ad9d82f8452119ceb6eb209c930640ec" }
+  use { "Pocco81/AutoSave.nvim", commit = "2c7a2943340ee2a36c6a61db812418fca1f57866" }
+  use { "wakatime/vim-wakatime", commit = "4692ec3e77ade9e65171182296cca74352a39a12" }
+  use { "liuchengxu/vim-which-key", commit = "4d64b2261aff3b9dc1863ebc1ea9ec410965a5de" }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
@@ -100,6 +104,12 @@ return packer.startup(function(use)
   use { "mfussenegger/nvim-dap", commit = "6b12294a57001d994022df8acbe2ef7327d30587" }
   use { "rcarriga/nvim-dap-ui", commit = "1cd4764221c91686dcf4d6b62d7a7b2d112e0b13" }
   use { "ravenxrz/DAPInstall.nvim", commit = "8798b4c36d33723e7bba6ed6e2c202f84bb300de" }
+  use 'theHamsta/nvim-dap-virtual-text'
+  use { "leoluz/nvim-dap-go", commit = "fca8bf90bf017e8ecb3a3fb8c3a3c05b60d1406d" }
+
+  -- Go
+  use { "ray-x/go.nvim", commit = "38ac0162ee2865b17d94043aa94ad74700c9db98" }
+  use {'ray-x/guihua.lua', commit = "c7166210fde9fc1c7b94486dfb41b1d66fa12e18", run = 'cd lua/fzy && make'}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
