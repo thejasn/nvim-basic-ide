@@ -78,3 +78,23 @@ keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opts)
 keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
 keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
+
+
+vim.cmd("nnoremap <leader>S <cmd>lua require('spectre').open()<CR>")
+-- search current word
+vim.cmd("nnoremap <leader>sw <cmd>lua require('spectre').open_visual({select_word=true})<CR>")
+vim.cmd("vnoremap <leader>s <esc>:lua require('spectre').open_visual()<CR>")
+vim.cmd("nnoremap <leader>sp viw:lua require('spectre').open_file_search()<cr>")
+
+-- vim which key
+vim.cmd("set timeoutlen=500")
+vim.cmd("nnoremap <silent> <leader> :WhichKey '<Space>'<CR>")
+
+
+-- nvim-dap-go
+vim.cmd("nmap <silent> <leader>dd :lua require('dap-go').debug_test()<CR>")
+
+
+
+
+

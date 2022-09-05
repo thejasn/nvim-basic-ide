@@ -12,6 +12,11 @@ local servers = {
   "bashls",
   "jsonls",
   "yamlls",
+  "gopls",
+  "bashls",
+  "dockerls",
+  "rust_analyzer",
+  "marksman",
 }
 
 lsp_installer.setup()

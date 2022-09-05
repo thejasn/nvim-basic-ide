@@ -23,3 +23,5 @@ telescope.setup {
     },
   },
 }
+
+require('spectre').setup()
