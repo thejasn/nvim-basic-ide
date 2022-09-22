@@ -63,7 +63,7 @@ return packer.startup(function(use)
   use { "Pocco81/AutoSave.nvim", commit = "2c7a2943340ee2a36c6a61db812418fca1f57866" }
   use { "wakatime/vim-wakatime", commit = "4692ec3e77ade9e65171182296cca74352a39a12" }
   use { "liuchengxu/vim-which-key", commit = "4d64b2261aff3b9dc1863ebc1ea9ec410965a5de" }
-
+  use { "lewis6991/spellsitter.nvim", commit = "4af8640d9d706447e78c13150ef7475ea2c16b30" }
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
