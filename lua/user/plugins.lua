@@ -60,7 +60,7 @@ return packer.startup(function(use)
   use { "Pocco81/AutoSave.nvim", commit = "2c7a2943340ee2a36c6a61db812418fca1f57866" }
   use { "wakatime/vim-wakatime", commit = "4692ec3e77ade9e65171182296cca74352a39a12" }
   use { "liuchengxu/vim-which-key", commit = "4d64b2261aff3b9dc1863ebc1ea9ec410965a5de" }
-
+  use { "lewis6991/spellsitter.nvim", commit = "4af8640d9d706447e78c13150ef7475ea2c16b30" }
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
   use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
@@ -88,8 +88,7 @@ return packer.startup(function(use)
 
   -- Treesitter
   use {
-    "nvim-treesitter/nvim-treesitter",
-    commit = "518e27589c0463af15463c9d675c65e464efc2fe",
+    "nvim-treesitter/nvim-treesitter", commit = "8ec59aee8097c64fcf27d1dbd77ea181c50846c5"
   }
 
   -- Git
