@@ -6,7 +6,12 @@ local servers = {
 	"pyright",
 	"bashls",
 	"jsonls",
-	"yamlls",
+	"yamlls", 
+    "gopls",
+      "bashls",
+  "dockerls",
+  "rust_analyzer",
+  "marksman",
 }
 
 local settings = {
@@ -40,6 +45,21 @@ for _, server in pairs(servers) do
 		on_attach = require("user.lsp.handlers").on_attach,
 		capabilities = require("user.lsp.handlers").capabilities,
 	}
+
+  if server == "sumneko_lua" then
+    local sumneko_opts = require "user.lsp.settings.sumneko_lua"
+    opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+  end
+
+  if server == "pyright" then
+    local pyright_opts = require "user.lsp.settings.pyright"
+    opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+  end
+
+  if server == "gopls" then
+    local gopls_opts = require "user.lsp.settings.gopls"
+    opts = vim.tbl_deep_extend("force", gopls_opts, opts)
+  end
 
 	server = vim.split(server, "@")[1]
 
