@@ -67,6 +67,10 @@ return packer.startup(function(use)
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
+  use { "ellisonleao/glow.nvim", commit = "8dca3583e44d54bcfd79cb8dc06ddb89128aa5e0" }
+
+  -- install without yarn or npm
+  use({ "iamcco/markdown-preview.nvim",commit = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96", run = function() vim.fn["mkdp#util#install"]() end })
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
