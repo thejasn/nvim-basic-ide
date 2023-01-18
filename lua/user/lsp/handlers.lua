@@ -82,7 +82,7 @@ M.on_attach = function(client, bufnr)
 	end
 
   if client.name == "gopls" then
-    client.resolved_capabilities.document_formatting = false
+    client.server_capabilities.documentFormattingProvider = false
   end
 
   lsp_keymaps(bufnr)
